@@ -39,11 +39,11 @@ void Passport::setDateOfIssuance(const Date& issuance)
     this->issuance = issuance;
 }
 
-void Passport::print()  
+void Passport::print() const
 {
     cout <<"Name: "<< name << endl;
-    cout <<"Name: "<< series << endl;
-    cout <<"Name: "<< number << endl;
+    cout <<"Series: "<< series << endl;
+    cout <<"Number: "<< number << endl;
     cout << "Date of birthday: ";
     birthday.print();
     cout << "Date of issuance: ";
